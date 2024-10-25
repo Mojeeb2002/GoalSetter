@@ -23,7 +23,7 @@ const createGoal = asyncHandler(async (req, res) => {
         text: req.body.text,
     });
 
-    res.status(200).json({ message: 'Set Goals' });
+    res.status(200).json(goal);
 });
 
 //Desc Update singel goal
